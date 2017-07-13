@@ -13,9 +13,9 @@ void  vLED_Task( void *pvParameters )
 {  
 	for(;;) 
 	{  
-		GPIO_ResetBits(GPIOA, GPIO_Pin_8);  
+		GPIO_ResetBits(GPIOD, GPIO_Pin_2);  
 		vTaskDelay(1000 / portTICK_RATE_MS);   
-		GPIO_SetBits(GPIOA, GPIO_Pin_8);    
+		GPIO_SetBits(GPIOD, GPIO_Pin_2);    
 		vTaskDelay(1000 / portTICK_RATE_MS);  
 	}  
 }
